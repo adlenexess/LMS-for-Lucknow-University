@@ -95,7 +95,4 @@ This repository is intended for a **college assignment / academic project** demo
 - **Factory Method (Practical form via Factory-like construction)**
   - JavaFX view loading is centralized through `FXMLLoader` in `MainApp` to create/show scenes from FXML paths.
 
-## License
-
-Add your license here (e.g., MIT) if you plan to publish this repository.
 
