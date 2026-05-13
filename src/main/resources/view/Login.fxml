@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lu.lms.controller.LoginController" stylesheets="@../application.css">
+   <children>
+      <VBox alignment="CENTER" spacing="10.0" VBox.vgrow="NEVER">
+         <children>
+            <ImageView fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../LU_logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label text="Lucknow University Library Management System" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
+         </children>
+      </VBox>
+      <VBox spacing="15.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="Username:" />
+            <TextField fx:id="usernameField" />
+            <Label text="Password:" />
+            <PasswordField fx:id="passwordField" />
+            <Label text="Role:" />
+            <ChoiceBox fx:id="roleChoice" />
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="loginBtn" onAction="#handleLogin" text="Login" />
+                  <Button fx:id="registerBtn" onAction="#handleRegister" text="Register" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="60.0" right="60.0" top="30.0" />
+   </padding>
+</VBox>

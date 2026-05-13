@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lu.lms.controller.LibrarianDashboardController" spacing="20" stylesheets="@../application.css">
+   <children>
+      <Label text="Librarian Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+      <Label text="Alerts" />
+      <ListView fx:id="alertsList" prefHeight="100" />
+      <HBox>
+        <children>
+          <Label text="Select Student:" />
+          <ChoiceBox fx:id="studentChoice" HBox.hgrow="ALWAYS" />
+          <Button onAction="#handleStudentSelect" text="View Issues" />
+        </children>
+      </HBox>
+      <ListView fx:id="studentIssuesList" prefHeight="150" />
+      <HBox alignment="CENTER" spacing="20">
+        <children>
+          <Button fx:id="sendAlertBtn" onAction="#handleSendAlerts" text="Send Alerts" />
+          <Button fx:id="logoutBtn" onAction="#handleLogout" text="Logout" />
+        </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20" left="20" right="20" top="20" />
+   </padding>
+</VBox>

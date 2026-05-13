@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lu.lms.controller.RegisterController" spacing="20" stylesheets="@../application.css">
+   <children>
+      <Label text="Register New Account" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+      <Label text="Username:" />
+<TextField fx:id="usernameField" />
+      <Label text="Password:" />
+<PasswordField fx:id="passwordField" />
+      <Label text="Role:" />
+<ChoiceBox fx:id="roleChoice" />
+      <Label text="Name:" />
+<TextField fx:id="nameField" />
+      <Label text="Email (Student only):" />
+<TextField fx:id="emailField" />
+      <Button fx:id="registerBtn" onAction="#handleRegister" text="Register" />
+      <Hyperlink fx:id="loginLink" onAction="#handleLoginLink" text="Already have account? Login" />
+   </children>
+   <padding>
+      <Insets bottom="20" left="50" right="50" top="20" />
+   </padding>
+</VBox>
+
